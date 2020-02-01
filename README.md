@@ -1,9 +1,8 @@
-Yii 2 - Sentry Error Logger
-==================
+# Yii 2 - Sentry Error Logger
 
 [Sentry](https://getsentry.com/) provides real-time crash reporting for web apps, both server and client side. This is a Yii 2 extension which lets you integrate your projects to Sentry and log PHP and JavaScript errors.
 
-Brought to you by [Mito](http://mito.hu). 
+Brought to you by [Mito](http://mito.hu).
 
 [![Latest Stable Version](https://poser.pugx.org/mito/yii2-sentry/v/stable)](https://packagist.org/packages/mito/yii2-sentry) [![Total Downloads](https://poser.pugx.org/mito/yii2-sentry/downloads)](https://packagist.org/packages/mito/yii2-sentry) [![License](https://poser.pugx.org/mito/yii2-sentry/license)](https://packagist.org/packages/mito/yii2-sentry)
 
@@ -15,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
-```
+```sh
 php composer.phar require --prefer-dist mito/yii2-sentry "~1.0.0"
 ```
 
 or add the following line to the require section of your `composer.json` file:
 
-```
+```json
 "mito/yii2-sentry": "~1.0.0"
 ```
 
@@ -30,8 +29,20 @@ or add the following line to the require section of your `composer.json` file:
 Yii 2 and above.
 Sentry 8 and above.
 
-You can use this extension with both the hosted and on-premise version of Sentry. 
+You can use this extension with both the hosted and on-premise version of Sentry.
 
+PHP extensions to be installed:
+
+- curl
+- mbstring
+- simplexml
+- zip
+
+On Ubuntu execute this.
+
+```sh
+sudo apt install -y php-curl php-mbstring php-simplexml php-zip
+```
 
 ## Usage
 
